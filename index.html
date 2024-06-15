@@ -4,15 +4,35 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Image Search</title>
     
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.9.0/simple-lightbox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"
+    />
     <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-54645c47.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-0fc460d7.js">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-4b066c51.css">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-81421415.css">
   </head>
   <body>
+    <div class="container">
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search images..." />
+        <button type="submit">Search</button>
+      </form>
+      <div id="loader" class="loader">Loading images, please wait...</div>
+      <ul id="gallery" class="gallery"></ul>
+    </div>
     <div class="loader"></div>
     
     
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.9.0/simple-lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.9.0/simple-lightbox.min.js"></script>
   </body>
 </html>
